@@ -89,6 +89,11 @@ body{
 
 	  }
 
+	  .post_area p {
+	  	margin: 5px;
+
+	  }
+
 .sidebar{
 	width: 250px;
 	height: 600px;
