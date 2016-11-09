@@ -1,0 +1,111 @@
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    vertical-align: baseline;
+    
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section { 
+	display: block;
+}
+
+body{
+	background: #666;
+}
+.container{
+	width: 1000px;
+	margin: auto;
+}
+
+.head{
+	width: 1000px;
+	height: 100px;
+	background: #FFF;
+}
+
+.navbar{
+	width: 1000px;
+	height: 50px;
+	background: #000;
+}
+
+#menu{
+	line-height: 10px;
+	float: left;
+
+}
+
+  #menu li{
+  	list-style-type: none;
+  	display: inline;
+
+  }
+
+   #menu a {
+   	text-decoration: none;
+   	font-size: 16px;
+   	font-family: "Comic Sans MS", cursive;
+   	color: #FFF;
+   	margin: 5px;
+   	padding: 6px;
+
+   }
+
+   #menu a:hover {
+   	 color: #f63;
+   	 text-decoration: underline;
+
+   }
+.post_area{
+	width: 750px;
+	
+	background: #fff;
+	float: left;
+}
+ 
+	  .post_area h2 {
+	  	font-size: 24px;
+	  }
+
+	  .post_area img{
+	  	padding-top: 10px;
+	  	padding-left: 10px;
+	  	padding-right: 10px;
+	  	float: left;
+
+	  }
+
+.sidebar{
+	width: 250px;
+	height: 600px;
+	background: #f99;
+	float: right;
+}
+
+.footer_area{
+	width: 1000px;
+	height: 100px;
+	background: #000;
+	color: #fff;
+	clear: both;
+} 
+
+#form {
+	float: right;
+	line-height: 50px;
+	padding-right: 3px;
+}
