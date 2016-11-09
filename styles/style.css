@@ -95,9 +95,11 @@ body{
 
 	  .post_area p {
 	  	margin-bottom: 10px; 
+	  	text-align: justify;
 
 	  }
 
+	  
 .sidebar{
 	width: 248px;
 	height: 600px;
@@ -118,4 +120,20 @@ body{
 	float: right;
 	line-height: 50px;
 	padding-right: 3px;
+}
+
+#rmlink{
+	float: right;
+	background: #000;
+	color: #FFF;
+	padding: 10px;
+	text-decoration: none;
+	margin-top: 5px;
+}
+
+#ltitle {
+	text-decoration: none;
+	font-size: 24px;
+	color: #000;
+	font-family: "Comic Sans MS" , cursive;
 }

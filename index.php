@@ -59,10 +59,10 @@
 
 
 		 echo " 
-            <h2>$post_title</h2>
-            <span> $post_author </span> <span> $post_date </span>
+            <h2><a id='ltitle' href='details.php?post=$post_id'>$post_title</a></h2>
+            <span> <i>By:</i><strong>$post_author</strong> </span> &nbsp; <span><b> $post_date </b></span><span style='color:brown;'><b>Comments(2)</b></span>
             <img src='admin/news_images/$post_image' width='100' height='100'/> 
-            <div>$post_content <a style='float:right;' href='details.php?post=$post_id'>Read More</a></div><br>
+            <div>$post_content <a id='rmlink' href='details.php?post=$post_id'>Read More</a></div><br>
             ";
 	 }
 
