@@ -71,10 +71,10 @@ body{
 
    }
 .post_area{
-	width: 750px;
-	
+	width: 730px;
 	background: #fff;
 	float: left;
+	padding: 10px;
 }
  
 	  .post_area h2 {
@@ -88,8 +88,9 @@ body{
 	  	padding-left: 10px;
 	  	padding-right: 10px;
 	  	float: left;
-	  	padding: 10px;
 	  	
+
+
 	  }
 
 	  .post_area p {
