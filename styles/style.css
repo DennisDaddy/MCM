@@ -97,10 +97,11 @@ body{
 	  }
 
 .sidebar{
-	width: 250px;
+	width: 248px;
 	height: 600px;
 	background: #f99;
 	float: right;
+	border-left: 1px solid #666; 
 }
 
 .footer_area{
