@@ -15,9 +15,8 @@
 
 	<?php include("includes/post_content.php");   ?>
 
-	<div class="sidebar">
-	This is post body
-	</div>
+	<?php include("includes/sidebar.php");   ?>
+
 
 	<div class="footer_area">This is footer</div>
 	

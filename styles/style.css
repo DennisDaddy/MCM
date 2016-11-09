@@ -99,14 +99,38 @@ body{
 
 	  }
 
-	  
+
 .sidebar{
 	width: 248px;
-	height: 600px;
+	
 	background: #f99;
 	float: right;
 	border-left: 1px solid #666; 
 }
+
+ #stitle{
+ 	background: #000;
+ 	color: #FFF;
+ 	padding: 5px;
+ 	font-size: 24px;
+ 	border-top: 1px solid #666;
+ }
+  
+ .recent_posts{
+ 	
+ 	text-align: center;
+ } 
+
+   .recent_posts a{
+   	text-decoration: none;
+   	color: #000;
+   	font-size: 18px;
+
+   }
+
+   .recent_posts a:hover{
+   	color: brown;
+   }
 
 .footer_area{
 	width: 1000px;
