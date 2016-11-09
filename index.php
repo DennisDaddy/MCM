@@ -62,7 +62,7 @@
             <h2>$post_title</h2>
             <span> $post_author </span> <span> $post_date </span>
             <img src='admin/news_images/$post_image' width='100' height='100'/> 
-            <div>$post_content <a style='float:right;' href='details.php?post=$post_id'>Read More</a></div>
+            <div>$post_content <a style='float:right;' href='details.php?post=$post_id'>Read More</a></div><br>
             ";
 	 }
 
