@@ -79,6 +79,7 @@ body{
  
 	  .post_area h2 {
 	  	font-size: 24px;
+	  	padding-bottom: 10px;
 	  }
 
 	  .post_area img{
@@ -90,7 +91,7 @@ body{
 	  }
 
 	  .post_area p {
-	  	margin: 5px;
+	  	margin: 5px; 
 
 	  }
 
