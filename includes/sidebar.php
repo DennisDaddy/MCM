@@ -1,5 +1,17 @@
 <div class="sidebar">
+<div id="stitle">Subcribe Via Email</div>
+<div>
+ 
+  <form style="padding: 3px; text-align: center;">
+  <input type="text" name="email">
+  <input type="hidden" name="">
+  <input type="submit" value="Subcribe" name="">
+  	
+  </form>
+	
+</div>
 <div id='stitle'>Recent Stories</div>
+
 
 	   <?php
 
