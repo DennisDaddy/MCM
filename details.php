@@ -36,7 +36,7 @@
 		 echo " 
             <h2>$post_title</h2>
             <span> <i>By:</i><strong>$post_author</strong> </span> &nbsp; <span><b> $post_date </b></span><span style='color:brown;'><b>Comments(2)</b></span>
-            <img src='admin/news_images/$post_image' width='400' height='400'/> 
+            <img src='admin/news_images/$post_image' width='300' height='300'/> 
             <div>$post_content</div>
             ";
 	 }
