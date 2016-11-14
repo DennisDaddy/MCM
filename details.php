@@ -49,17 +49,17 @@
 	
 	<table width="730" align="center" bgcolor="#99CCCC" >
 		<tr>
-			<td align="right" >Your Name:</td>
+			<td align="right" ><strong>Your Name:</strong></td>
 			<td><input type="text" name="comment_name" /> </td>
 		</tr>
 
 		<tr>
-			<td align="right" >Your Email:</td>
+			<td align="right" ><strong>Your Email:</strong></td>
 			<td><input type="text" name="comment_email" size="40" /> </td>
 		</tr>
 
 		<tr>
-			<td align="right" >Your Comment:</td>
+			<td align="right" ><strong>Your Comment:</strong></td>
 			<td><textarea name="comment" cols="25" rows="16" ></textarea> </td>
 		</tr>
 
