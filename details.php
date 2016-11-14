@@ -43,25 +43,23 @@
 	}
 
 	 ?>
-
-	</div>
-
-     
+	 <div>
+	 	<h2>Post a Comment</h2>     
 	<form method="post" action="details.php?post=<?php echo $post_id; ?>">
-	<h2>Post a Comment</h2>
-	<table width="730" align="center" >
+	
+	<table width="730" align="center" bgcolor="#99CCCC" >
 		<tr>
-			<td>Your Name:</td>
+			<td align="right" >Your Name:</td>
 			<td><input type="text" name="comment_name" /> </td>
 		</tr>
 
 		<tr>
-			<td>Your Email:</td>
+			<td align="right" >Your Email:</td>
 			<td><input type="text" name="comment_email" /> </td>
 		</tr>
 
 		<tr>
-			<td>Your Comment:</td>
+			<td align="right" >Your Comment:</td>
 			<td><textarea name="comment" cols="25" rows="16" ></textarea> </td>
 		</tr>
 
@@ -69,13 +67,18 @@
 
 		<tr>
 			
-			<td><input type="submit" name="submit" value="Post Comment" /> </td>
+			<td align="right" colspan="4" ><input type="submit" name="submit" value="Post Comment" /> </td>
 		</tr>
 	</table>
 		
 	</form>
 
 
+	 </div>
+
+	</div>
+
+     
 
 
 	<?php include("includes/sidebar.php");   ?>
