@@ -50,7 +50,7 @@
 	<table width="730" align="center" bgcolor="#99CCCC" >
 		<tr>
 			<td align="right" ><strong>Your Name:</strong></td>
-			<td><input type="text" name="comment_name" /> </td>
+			<td><input type="text" name="comment_name" size="40" /> </td>
 		</tr>
 
 		<tr>
@@ -60,7 +60,7 @@
 
 		<tr>
 			<td align="right" ><strong>Your Comment:</strong></td>
-			<td><textarea name="comment" cols="25" rows="16" ></textarea> </td>
+			<td><textarea name="comment" cols="34" rows="16" ></textarea> </td>
 		</tr>
 
 		
