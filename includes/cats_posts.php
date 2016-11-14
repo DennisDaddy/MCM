@@ -1,8 +1,11 @@
 <div class="post_area">
 	 <?php
+	  if (isset($_GET['post_cat'])) {
+
+	 	$cat_id = $_GET['post_cat'];
 
 
-	 $get_posts = "select * from posts order by rand() LIMIT 0,5";
+	 $get_posts = "select * from posts where post_cat = '$cat_id'";
 
 	   $run_posts = mysqli_query($con,$get_posts);
 
@@ -22,6 +25,7 @@
             <div>$post_content <a id='rmlink' href='details.php?post=$post_id'>Read More</a></div><br>
             ";
 	 }
+	}
 
 	 ?>
 
