@@ -55,7 +55,7 @@
 
 		<tr>
 			<td align="right" >Your Email:</td>
-			<td><input type="text" name="comment_email" /> </td>
+			<td><input type="text" name="comment_email" size="40" /> </td>
 		</tr>
 
 		<tr>
