@@ -28,5 +28,24 @@
 		
 	</form>
 
+	<?php
+
+	if (isset($_POST['comment'])) {
+		$comment_name = $_POST['comment_name'];
+		$comment_email = $_POST['comment_emailcomment'];
+		$comment = $_POST['comment'];
+		$status = $_POST['unapprove'];
+
+		if ($comment_name=='' OR $comment_email=='' OR $comment=='' ) {
+
+			echo "<script>alert('please fill in all blanks')</script>";
+			echo "<script>window.open('details.php?post=$post_id')</script>";
+			exit();
+		}
+
+	}
+
+	?>
+
 
 	 </div>
