@@ -1,6 +1,22 @@
 <div>
+
+		<?php
+
+		if (isset($_GET['post'])) {
+
+			 	$post_id = $_GET['post'];
+
+			 $get_posts = "select * from posts where post_id='$post_id'";
+
+			   $run_posts = mysqli_query($con,$get_posts);
+			   $row = mysqli_fetch_array($run_posts);
+			   $post_new_id = $row['post_id'];
+			}
+
+		?>
+
 	 	<h2>Post a Comment</h2>     
-	<form method="post" action="details.php?post=<?php echo $post_id; ?>">
+	<form method="post" action="details.php?post=<?php echo $post_new_id; ?>">
 	
 	<table width="730" align="center" bgcolor="#99CCCC" >
 		<tr>
@@ -30,17 +46,32 @@
 
 	<?php
 
+	include("includes/database.php");
+
+
 	if (isset($_POST['comment'])) {
 		$comment_name = $_POST['comment_name'];
-		$comment_email = $_POST['comment_emailcomment'];
+		$comment_email = $_POST['comment_email'];
 		$comment = $_POST['comment'];
-		$status = $_POST['unapprove'];
-
+		$status = "unapprove";
+ 
 		if ($comment_name=='' OR $comment_email=='' OR $comment=='' ) {
 
 			echo "<script>alert('please fill in all blanks')</script>";
 			echo "<script>window.open('details.php?post=$post_id')</script>";
 			exit();
+		}
+
+		else{
+
+			$query_comment = "insert into comments (comment_name, comment_email, comment, status) values('$comment_name','$comment_email','$comment', $status)";
+			$run_query = mysqli_query($con,$query_comment); 
+
+			
+				echo "<script>alert('Your comment will be approved after approval!')</script>";
+			echo "<script>window.open('details.php?post=$post_id')</script>";
+			exit();
+			
 		}
 
 	}
