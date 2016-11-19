@@ -15,6 +15,7 @@
 
 	<?php include("includes/post_content.php");   ?>
 	
+	
 
 	<?php include("includes/sidebar.php");   ?>
 

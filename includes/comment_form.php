@@ -1,6 +1,7 @@
 <div>
 
 		<?php
+		include("includes/database.php");
 
 		if (isset($_GET['post'])) {
 
@@ -11,6 +12,14 @@
 			   $run_posts = mysqli_query($con,$get_posts);
 			   $row = mysqli_fetch_array($run_posts);
 			   $post_new_id = $row['post_id'];
+			}
+
+			$get_comments = "select * from comments where post_id='$post_com_id' AND status='approve' ";
+
+			$run_comments = mysqli_query($get_comments);
+
+			while ($row_comments = mysql_fetch_array($run_comments)) {
+				
 			}
 
 		?>
@@ -46,10 +55,9 @@
 
 	<?php
 
-	include("includes/database.php");
 
-
-	if (isset($_POST['comment'])) {
+	if (isset($_POST['submit'])) {
+		$post_com_id = $post_new_id;
 		$comment_name = $_POST['comment_name'];
 		$comment_email = $_POST['comment_email'];
 		$comment = $_POST['comment'];
@@ -64,7 +72,7 @@
 
 		else{
 
-			$query_comment = "insert into comments (comment_name, comment_email, comment, status) values('$comment_name','$comment_email','$comment', $status)";
+			$query_comment = "insert into comments(post_id,comment_name, comment_email, comment_text, status) values('$post_com_id','$comment_name','$comment_email','$comment', '$status')";
 			$run_query = mysqli_query($con,$query_comment); 
 
 			
